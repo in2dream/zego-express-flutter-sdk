@@ -815,7 +815,7 @@ class ZegoExpressImpl {
         if (ZegoExpressEngine.onCapturedSoundLevelUpdate == null) return;
 
         ZegoExpressEngine.onCapturedSoundLevelUpdate(
-          map['soundLevels']
+          map['soundLevels'] ?? map['soundLevel']
         );
         break;
 
